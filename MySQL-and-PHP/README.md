@@ -10,12 +10,14 @@ MAMP Setup for Mac
 4. MAMP should start the Apache Server and MySQL Server automatically (see the green light under Status), and click **Open start page**
 5. The start page is located at **http://localhost:8888/MAMP/**
 6. Write your first PHP with TextWrangler (see the raw markdown file for the exact HTML code)
+
 <h1>[Your name]'s homepage</h1>
+
 , create a folder **howdy** under the **htdocs** folder and save the file as **/Applications/MAMP/htdocs/howdy/index.php**
 7. Navigate your browser to http://localhost:8888/howdy/index.php
 8. Edit the index.php file with (see the raw markdown file for the HTML and PHP code):
 
-<h1>H[Your name]'s homepage</h1>
+<h1>[Your name]'s homepage</h1>
 <p>
 <?php
    echo "Hi there.\n";
