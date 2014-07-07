@@ -15,7 +15,7 @@ MAMP Setup for Mac
 7. Navigate your browser to http://localhost:8888/howdy/index.php
 8. Edit the index.php file with (see the raw markdown file for the HTML and PHP code):
 
-<h1>Hello from Dr. Chuck's HTML Page</h1>
+<h1>H[Your name]'s homepage</h1>
 <p>
 <?php
    echo "Hi there.\n";
