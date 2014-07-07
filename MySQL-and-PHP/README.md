@@ -34,3 +34,4 @@ XAMPP Setup for Mac (alternative to MAMP)
 2. Install [XAMPP] (http://www.apachefriends.org/en/xampp.html)
 3. 
 
+(To be completed)
