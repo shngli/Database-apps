@@ -14,7 +14,6 @@ MAMP Setup for Mac
 , create a folder **howdy** under the **htdocs** folder and save the file as **/Applications/MAMP/htdocs/howdy/index.php**
 7. Navigate your browser to http://localhost:8888/howdy/index.php
 8. Edit the index.php file with (see the raw markdown file for the HTML and PHP code):
-
 <h1>[Your name]'s homepage</h1>
 <p>
 <?php
