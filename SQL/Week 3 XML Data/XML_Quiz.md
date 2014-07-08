@@ -122,6 +122,7 @@ Here is an XML DTD:
 ]>
 ```
 Which of the following documents match the DTD?
+
 1.
 ```DTD
 <meal>
