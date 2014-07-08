@@ -51,6 +51,7 @@ Eg.
 Question 2
 ------------------------
 Which of the following is NOT a valid JSON array? 
+
 **Answer:** 
 ```json
 [ 1, 2, dog, cat, true, false, [1, "dog", null],
