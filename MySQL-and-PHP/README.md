@@ -1,7 +1,6 @@
 MySQL and PHP setup instructions
 ================================
 
-
 MAMP Setup for Mac
 ----------------------
 1. Install [TextWrangler] (http://www.barebones.com/products/TextWrangler/download.html)
@@ -54,4 +53,10 @@ XAMPP Setup for Mac (alternative to MAMP)
 
 Note: Watch Dr Chuck's [screencast] (https://www.youtube.com/watch?v=mzlvRFMNtHo) for the walkthrough. For Windows users, watch this [screencast] (https://www.youtube.com/watch?v=msF-XcJk3Bc).
 
-(To be completed)
+
+Building a CRUD Application
+-----------------------------
+1. Create a MySQL table, MySQL user (i.e. using GRANT), and create a PHP application that performs a create, read, update and delete operation. 
+2. The data model is about contact information for your friends in a table named "contacts" . You have an auto increment field named "id", a name, email address, phone number, and zip code. All the fields should be strings.
+3. When you are adding or editing a contact, all fields are required. If any of the fields are empty or blank, you should issue an error message and redirect to the index.php file where the error message is to be shown in red above the list of contacts.
+4. When you successfully complete the INSERT, DELETE, or UPDATE operation, you should redirect to the main mage with an appropriate success message that is to be shown in green above the list of contacts.
