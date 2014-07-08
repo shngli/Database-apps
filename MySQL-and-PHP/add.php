@@ -26,7 +26,7 @@ if ( isset($_POST['name']) && isset($_POST['email'])
    empty($_GET['name']) 
    && empty($_GET['email']) 
    && empty($_GET['zip']) && empty($_GET['phone'])) {
-   $_SESSION['error'] = 'Record not Added. All Information is Required';
+   $_SESSION['error'] = 'Record not Added. All values are required';
    header( 'Location: index.php' ) ;
    return;
 }
