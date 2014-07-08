@@ -15,7 +15,7 @@ MAMP Setup for Mac
 9. Save the file and refresh your browser.
 
 
-Note: Watch Dr Chuck's [screencast] (https://www.youtube.com/watch?v=FC0DydeeTTk) for the walkthrough
+**Note**: Watch Dr Chuck's [screencast] (https://www.youtube.com/watch?v=FC0DydeeTTk) for the walkthrough
 
 
 XAMPP Setup for Mac (alternative to MAMP)
@@ -31,7 +31,7 @@ XAMPP Setup for Mac (alternative to MAMP)
 8. Edit the index.php file with `<h1>[Your name]'s homepage</h1><p><?php echo "Hi there.\n"; $answer = 6 * 7; echo "The answer is $answer, what was the question again?\n"; ?></p><p>Yes another paragraph.</p>`
 9. Save the file and refresh your browser.
 
-Note: Watch Dr Chuck's [screencast] (https://www.youtube.com/watch?v=mzlvRFMNtHo) for the walkthrough. For Windows users, watch this [screencast] (https://www.youtube.com/watch?v=msF-XcJk3Bc).
+**Note**: Watch Dr Chuck's [screencast] (https://www.youtube.com/watch?v=mzlvRFMNtHo) for the walkthrough. For Windows users, watch this [screencast] (https://www.youtube.com/watch?v=msF-XcJk3Bc).
 
 
 Building a CRUD Application
