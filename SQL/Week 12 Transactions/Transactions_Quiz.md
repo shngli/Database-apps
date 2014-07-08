@@ -14,8 +14,8 @@ T1: set transaction isolation level repeatable read;
 Suppose table R initially has one tuple with value A=3 and table S initially has one tuple with value B=6. Consider the following possible transactions T2, executed around the same time as T1. Which one of them can cause the two transactions to exhibit nonserializable behavior? 
 
 **Answer:** 
-* T2: set transaction isolation level serializable; insert into R values (4); commit;
-* T2: set transaction isolation level serializable; update R set A=4; delete from S where B=6; commit;
+* `T2: set transaction isolation level serializable; insert into R values (4); commit;`
+* `T2: set transaction isolation level serializable; update R set A=4; delete from S where B=6; commit;`
 
 **Explanation:** 
 Nonserializable behavior can be exhibited if transaction T2 performes inserts on R, or if T2 modifies both R and S. On inserts, repeatable reads allow "phantom" tuples to appear during a transaction. If both R and S are modified in T2, it is possible for T1 to read the state of R before T2 and the state of S after T2.
