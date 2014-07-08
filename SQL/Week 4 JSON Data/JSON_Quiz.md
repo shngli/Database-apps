@@ -129,7 +129,8 @@ Consider the following JSON data:
 { "A": [1,1,2,2], "B": {"C":3, "D":4}, "E":[5,6,true], "F": {"G": [null,7]} }
 ```
 Which of the following could NOT be included as part of a JSON Schema specification that is satisfied by the JSON data above? Assume that every letter ("A", "B", "C", ...) appears in the JSON Schema specification exactly once. 
-Answer:
+
+**Answer:**
 ```json
 "B": {"type":"array", "items": {"C": {"type":"integer"},
                                 "D": {"type":"integer"}}}
