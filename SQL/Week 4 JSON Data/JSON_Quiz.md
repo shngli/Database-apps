@@ -13,7 +13,7 @@ Which of the following is NOT a valid JSON object?
   "email": "smiley@xyz.com",
   "happy": true }
 ```
-Answer 2:
+**Answer 2:**
 ```json
 { "name": "Smiley",
   "age": 20,
