@@ -35,11 +35,11 @@ Consider a set of users A, B, C, D, E. Suppose user A creates a table T and thus
 ```
 After execution of statement 5, which of the following is true? 
 
-*Answer:* 
+**Answer:** 
 * D has privilege UPDATE ON T
 * Both D and E have privilege UPDATE ON T, but C doesn't
 
-*Explanation:*
+**Explanation:**
 Let P denote the privilege "UPDATE ON T". After statements 1-4, all five users have privilege P. After statement 5, user C no longer has privilege P. Although C granted privilege P (with grant option) to user D, the "cascade" has no effect because D was also granted privilege P (with grant option) by user B.
 
 Question 3
@@ -53,10 +53,10 @@ The following SQL statement over tables R(c,d), S(f,g), and T(a,b) requires cert
 ```
 Which of the following privileges is not useful for execution of this SQL statement? 
 
-*Answer:* 
+**Answer:** 
 INSERT ON T(b)
 
-*Explanation:* 
+**Explanation:** 
 We need to have read access to T.a, because it is referred to in "WHERE a <= ALL ..." and "WHERE f > T.a". Thus, we need privilege SELECT ON T(a) or SELECT ON T. The subquery "(SELECT d FROM R)" requires privilege SELECT ON R(d) or SELECT ON R. The subquery "(SELECT f FROM S WHERE f > T.a)" requires privilege SELECT ON S(f) or SELECT ON f. Finally, we need to update T.a and T.b, so either UPDATE ON T(a) and UPDATE ON T(b), or else UPDATE ON T, is needed. No other privileges are useful for executing the statement.
 
 Eg.
@@ -78,9 +78,9 @@ Consider a set of users U, V, W, X, and Y. Suppose user U creates a table T and 
 ```
 Which of the following statements is true? 
 
-*Answer:* 
+**Answer:** 
 X does not have privilege SELECT ON T after statement 6
 
-*Explanation:* 
+**Explanation:** 
 As owner, U has all privileges on T. Let P denote the privilege "SELECT ON T". After statement 1, V and W have privilege P granted by U. After statement 2, W is additionally granted privilege P by V. After statement 3, X and Y also have privilege P, granted by W. After statement 4, Y is additionally granted privilege P by U. After statement 5, V no longer has privilege P. The "restrict" does not block the statement since there is no cascading revoking of privileges (W still has privilege P from U). After statement 6, W loses privilege P and so does X since it was granted by W, but Y still retains privilege granted from U.
 
