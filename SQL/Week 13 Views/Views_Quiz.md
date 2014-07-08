@@ -19,8 +19,17 @@ Each of the choices describes, in English, a view that could be created with a q
 
 **Explanation:** 
 In order to be updatable according to the SQL standard, a view must: 
-•	Have only one table T in its top-level FROM clause 
-•	Not use SELECT DISTINCT in its top-level FROM clause 
-•	Include all attributes from T that do not permit NULLs 
-•	Not refer to T in subqueries 
-•	Not use GROUP BY or aggregation 
+1.	Have only one table T in its top-level FROM clause 
+2.	Not use SELECT DISTINCT in its top-level FROM clause 
+3.	Include all attributes from T that do not permit NULLs 
+4.	Not refer to T in subqueries 
+5.	Not use GROUP BY or aggregation 
+
+Eg.
+* `A view "ExecutiveStar" containing the name, gender, and executive license number of all individuals who are both stars and executives.` This view requires more than more one table in its top-level FROM clause, making it not updatable.
+* `A view "StudioPresInfo" containing the studio name, executive name, and license number for all executives who are studio presidents.` This view requires more than more one table in its top-level FROM clause, making it not updatable.
+* `A view "GenderBalance" containing the number of male and number of female movie stars.` Views involving aggregation are not updatable.
+* `A view "RichExecInfo" containing the name, address, and net worth of all executives with a net worth of at least $10,000,000.` License number is a primary key for MovieExecutive; its value cannot be NULL, and thus it must be included in any view over MovieExecutive.
+* `A view "NewYorkWealth" containing the average net worth of movie executives whose address contains "New York".` Views involving aggregation are not updatable.
+* `A view "SameBirthday" containing pairs of movie star names where the movie stars have the same birthdate.` This view requires two instances of MovieStar in its top-level FROM clause, making it not updatable.
+* `A view "Birthdays" containing a list of birthdates (no duplicates) belonging to at least one movie star.` Name is a primary key for MovieStar; its value cannot be NULL, and thus it must be included in any view over MovieStar. Furthermore, the view requires SELECT DISTINCT.
