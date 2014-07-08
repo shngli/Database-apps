@@ -52,6 +52,6 @@ XAMPP Setup for Mac (alternative to MAMP)
 <p>Yes another paragraph.</p>
 9. Save the file and refresh your browser.
 
-Note: Watch Dr Chuck's [screencast] (https://www.youtube.com/watch?v=mzlvRFMNtHo) for the walkthrough
+Note: Watch Dr Chuck's [screencast] (https://www.youtube.com/watch?v=mzlvRFMNtHo) for the walkthrough. For Windows users, watch this [screencast] (https://www.youtube.com/watch?v=msF-XcJk3Bc).
 
 (To be completed)
