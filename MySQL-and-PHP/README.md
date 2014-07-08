@@ -24,8 +24,8 @@ MAMP Setup for Mac
 ?>
 </p>
 <p>Yes another paragraph.</p>
-
 9. Save the file and refresh your browser.
+
 
 Note: Watch Dr Chuck's [screencast] (https://www.youtube.com/watch?v=FC0DydeeTTk) for the walkthrough
 
