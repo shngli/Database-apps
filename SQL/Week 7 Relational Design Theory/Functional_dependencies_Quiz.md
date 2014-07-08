@@ -45,7 +45,7 @@ Let relation R(A,B,C,D,E,F,G,H) satisfy the following functional dependencies:  
 
 Which of the following FDs is also guaranteed to be satisfied by R? 
 
-**Answer:* 
+**Answer:** 
 
 * `BDG → AE` Yes; BDG+ = BDGECHAF (all attributes), which contains AE.
 * `BED → CF` Yes; BED+ = BEDCF, which includes CF.
