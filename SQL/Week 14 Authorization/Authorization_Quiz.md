@@ -13,7 +13,7 @@ The following SQL statement over tables R(a,b), S(b,c), and T(a,c) requires cert
 Which of the following privileges is not useful for execution of this SQL statement? 
 
 **Answer:**
-SELECT ON S(b)
+`SELECT ON S(b)`
 
 **Explanation:**
 We need to have read access to R.a and R.b, because these attributes are referred to in "WHERE b IN..." and "WHERE T.a = R.a", respectively. Thus, we need privileges SELECT ON R(a) and SELECT ON R(b), or SELECT ON R. The subquery "(SELECT c FROM S)" requires privilege SELECT ON S(c) or SELECT ON S. The subquery "(SELECT a FROM T ...)" requires privilege SELECT ON T(a) or SELECT ON T, which also apply for condition "WHERE T.a=R.a". Finally, we need to update R.a, so either UPDATE ON R(a) or UPDATE ON R is needed. No other privileges are useful for executing the statement.
@@ -54,7 +54,7 @@ The following SQL statement over tables R(c,d), S(f,g), and T(a,b) requires cert
 Which of the following privileges is not useful for execution of this SQL statement? 
 
 **Answer:** 
-INSERT ON T(b)
+`INSERT ON T(b)`
 
 **Explanation:** 
 We need to have read access to T.a, because it is referred to in "WHERE a <= ALL ..." and "WHERE f > T.a". Thus, we need privilege SELECT ON T(a) or SELECT ON T. The subquery "(SELECT d FROM R)" requires privilege SELECT ON R(d) or SELECT ON R. The subquery "(SELECT f FROM S WHERE f > T.a)" requires privilege SELECT ON S(f) or SELECT ON f. Finally, we need to update T.a and T.b, so either UPDATE ON T(a) and UPDATE ON T(b), or else UPDATE ON T, is needed. No other privileges are useful for executing the statement.
