@@ -1,0 +1,52 @@
+show databases;
+
+CREATE DATABASE publications;GRANT ALL ON publications TO 'jim@localhost' IDENTIFIED BY 'password';USE publications;
+
+CREATE TABLE classics (   author VARCHAR(128),   title VARCHAR(128),   type VARCHAR(16),  year CHAR(4)) ENGINE MyISAM;DESCRIBE classics;
+
+DROP TABLE classics;CREATE TABLE classics (  id INT UNSIGNED NOT NULL     AUTO_INCREMENT KEY,   author VARCHAR(128),   title VARCHAR(128),   type VARCHAR(16),  year CHAR(4)) ENGINE MyISAM;DESCRIBE classics;
+
+INSERT INTO classics(author, title, type, year)    VALUES('Mark Twain','The Adventures of Tom Sawyer','Fiction','1876');INSERT INTO classics(author, title, type, year)    VALUES('Jane Austen','Pride and Prejudice','Fiction','1811');INSERT INTO classics(author, title, type, year)    VALUES('Charles Darwin','The Origin of Species','Non-Fiction','1856');INSERT INTO classics(author, title, type, year)    VALUES('Charles Dickens','The Old Curiosity Shop','Fiction','1841');INSERT INTO classics(author, title, type, year)    VALUES('William Shakespeare','Romeo and Juliet','Play','1594');
+
+ALTER TABLE classics MODIFY year SMALLINT;
+
+describe classics;
+
+ALTER TABLE classics ADD pages SMALLINT;
+
+describe classics;
+
+ALTER TABLE classics ADD INDEX(author);
+
+ALTER TABLE classics ADD FULLTEXT(title);
+
+select * from classics;
+
+select title, year from classics;
+
+select count(*) from classics;
+
+SELECT title, author, year FROM classics WHERE year > 1850;
+
+SELECT title, author FROM classics WHERE title LIKE "%and%";
+
+SELECT title, author, year FROM classics ORDER BY year;
+
+SELECT title, author, year FROM classics ORDER BY year DESC;
+
+SELECT title, author, year FROM classics ORDER BY year DESC LIMIT 2;
+
+SELECT title, author, year FROM classics ORDER BY year DESC LIMIT 1,2;
+
+CREATE TABLE tracks (  id INT UNSIGNED NOT NULL     AUTO_INCREMENT KEY,   title VARCHAR(128),   rating INTEGER);
+
+INSERT INTO tracks (title, rating)  VALUES ('Who Made Who', 5);INSERT INTO tracks (title, rating)  VALUES ('Stray Cat Strut', 4);INSERT INTO tracks (title, rating)  VALUES ('The Twist', 2);INSERT INTO tracks (title, rating)  VALUES ('Down With The Sickness', 4);INSERT INTO tracks (title, rating)  VALUES ('Iron Man', 5);
+
+SELECT * FROM tracks;
+
+SELECT rating, COUNT(rating) FROM tracks GROUP BY rating;
+
+SELECT rating, COUNT(rating) FROM tracks GROUP BY rating ORDER BY rating DESC;
+
+SELECT rating, COUNT(rating) FROM tracks GROUP BY rating ORDER BY rating desc LIMIT 2;
+

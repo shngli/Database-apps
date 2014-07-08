@@ -1,0 +1,26 @@
+CREATE TABLE Track (  id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY,   title VARCHAR(128),   rating INTEGER,  len INTEGER,  count INTEGER,  album_id INTEGER,  genre_id INTEGER);CREATE TABLE Genre (  id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY,   name VARCHAR(128));CREATE TABLE Album (  id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY,   title VARCHAR(128),  artist_id INTEGER);CREATE TABLE Artist (  id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY,   name VARCHAR(128));
+
+insert into Artist (name) values ('Led Zepplin');
+insert into Artist (name) values ('AC/DC');
+
+insert into Genre (name) values ('Rock');
+insert into Genre (name) values ('Metal');
+
+insert into Album (title, artist_id) values ('Who Made Who', 2);insert into Album (title, artist_id) values ('IV', 1);
+
+insert into Track (title, rating, len, count, album_id, genre_id)      values ('Black Dog', 5, 297, 0, 2, 1);insert into Track (title, rating, len, count, album_id, genre_id)                         values ('Stairway', 5, 482, 0, 2, 1);insert into Track (title, rating, len, count, album_id, genre_id)      values ('About to Rock', 5, 313, 0, 1, 2);insert into Track (title, rating, len, count, album_id, genre_id)      values ('Who Made Who', 5, 207, 0, 1, 2);
+
+select Album.title, Artist.name from Album join Artist on Album.artist_id = Artist.id;
+
+select * from Album join Artist on Album.artist_id = Artist.id;
+
+select Track.title, Artist.name, Album.title, Genre.name from Track join Genre join Album join Artist on Track.genre_id = Genre.id and Track.album_id = Album.id and Album.artist_id = Artist.id;
+
+
+CREATE TABLE accounts (   number INT,   balance FLOAT,   PRIMARY KEY(number) ) ENGINE InnoDB; INSERT INTO accounts(number, balance) VALUES(12345, 1025.50); INSERT INTO accounts(number, balance) VALUES(67890, 140.00); 
+
+BEGIN; UPDATE accounts SET balance=balance+25.11 WHERE number=12345; COMMIT; 
+COMMIT;
+
+BEGIN;UPDATE accounts SET balance=balance-250 WHERE number=12345;UPDATE accounts SET balance=balance+250 WHERE number=67890;SELECT * from accounts;
+ROLLBACK;
