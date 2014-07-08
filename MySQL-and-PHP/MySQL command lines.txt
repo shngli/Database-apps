@@ -1,0 +1,74 @@
+67-194-71-57:~ xxxxxxx$ /Applications/xampp/xamppfiles/bin/mysql -uroot
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 3
+Server version: 5.1.44 Source distribution
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| books              |
+| contacts           |
+| mysql              |
+| sheng              |
+| test               |
++--------------------+
+6 rows in set (0.14 sec)
+
+mysql> use contacts;
+Database changed
+mysql> describe contacts;
++-------+------------------+------+-----+---------+----------------+
+| Field | Type             | Null | Key | Default | Extra          |
++-------+------------------+------+-----+---------+----------------+
+| id    | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(128)     | YES  |     | NULL    |                |
+| email | varchar(128)     | YES  |     | NULL    |                |
+| phone | varchar(128)     | YES  |     | NULL    |                |
+| zip   | varchar(128)     | YES  |     | NULL    |                |
++-------+------------------+------+-----+---------+----------------+
+5 rows in set (0.04 sec)
+
+mysql> drop database contacts;
+Query OK, 1 row affected (0.13 sec)
+
+mysql> create database contacts;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use contacts;
+Database changed
+mysql> GRANT ALL ON contacts.* TO 'fred'@'localhost' IDENTIFIED BY 'zap';
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> GRANT ALL ON contacts.* TO 'fred'@'127.0.0.1' IDENTIFIED BY 'zap';
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> Create TABLE contacts (
+    -> id INT UNSIGNED NOT NULL
+    -> AUTO_INCREMENT KEY,
+    -> name VARCHAR(128),
+    -> email VARCHAR(128),
+    -> phone VARCHAR(128),
+    -> zip VARCHAR(128));
+Query OK, 0 rows affected (0.09 sec)
+
+mysql> ALTER TABLE contacts ADD INDEX(email);
+Query OK, 0 rows affected (0.36 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> Describe contacts;
++-------+------------------+------+-----+---------+----------------+
+| Field | Type             | Null | Key | Default | Extra          |
++-------+------------------+------+-----+---------+----------------+
+| id    | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(128)     | YES  |     | NULL    |                |
+| email | varchar(128)     | YES  | MUL | NULL    |                |
+| phone | varchar(128)     | YES  |     | NULL    |                |
+| zip   | varchar(128)     | YES  |     | NULL    |                |
++-------+------------------+------+-----+---------+----------------+
+5 rows in set (0.01 sec)
+
+mysql> 
