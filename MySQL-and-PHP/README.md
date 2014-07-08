@@ -24,6 +24,7 @@ MAMP Setup for Mac
 ?>
 </p>
 <p>Yes another paragraph.</p>
+
 9. Save the file and refresh your browser.
 
 Note: Watch Dr Chuck's [screencast] (https://www.youtube.com/watch?v=FC0DydeeTTk) for the walkthrough
@@ -40,7 +41,7 @@ XAMPP Setup for Mac (alternative to MAMP)
 <h1>[Your name]'s homepage</h1>
 , create a folder **howdy** under the **htdocs** folder and save the file as **/Applications/XAMPP/htdocs/howdy/index.php**
 7. Navigate your browser to http://localhost:8888/howdy/index.php
-8. 
+8. Edit the index.php file with (see the raw markdown file for the HTML and PHP code):
 <h1>[Your name]'s homepage</h1>
 <p>
 <?php
