@@ -1,0 +1,1 @@
+select count(*) from (select docid, sum(count) from frequency f group by f.docid having sum(f.count) > 300);

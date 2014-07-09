@@ -1,0 +1,1 @@
+select count(*) from (select * from frequency f where f.term = 'parliament');
