@@ -10,10 +10,4 @@ Repository for database applications
 4. **Fundamentals of Database Systems (6th edition)** by Elmasri and Navathe
 5. **Database System Concepts (6th edition)** by Silberschatz, Korth, and Sudarshan
 
-
-###Web resources
-
-1. **[Introduction to PHP and MySQL](http://www.php-intro.com/)** by Dr. Chuck at the University of Michigan School of Information.
-2. **[Introduction to Databases](https://class.stanford.edu/courses/Home/Databases/Engineering/about)** by Jennifer Widom at Stanford University.
-
 (to be updated)
