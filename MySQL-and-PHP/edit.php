@@ -1,3 +1,6 @@
+// Author: Chisheng Li
+// PHP code to edit contact in the database.
+
 <?php
 require_once "db.php";
 session_start();
