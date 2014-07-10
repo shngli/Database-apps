@@ -1,3 +1,6 @@
+// Author: Chisheng Li
+// PHP code to store the name, email, phone number and zip codes of contacts added to the database.
+
 <?php
 error_reporting(-1);
 require_once "db.php";
