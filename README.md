@@ -13,8 +13,7 @@ Repository for database applications
 
 ###Web resources
 
-6.**[Introduction to PHP and MySQL](http://www.php-intro.com/)** by Dr. Chuck at the University of Michigan School of Information.
-
-7.**[Introduction to Databases](https://class.stanford.edu/courses/Home/Databases/Engineering/about)** by Jennifer Widom at Stanford University.
+6. **[Introduction to PHP and MySQL](http://www.php-intro.com/)** by Dr. Chuck at the University of Michigan School of Information.
+7. **[Introduction to Databases](https://class.stanford.edu/courses/Home/Databases/Engineering/about)** by Jennifer Widom at Stanford University.
 
 (to be updated)
