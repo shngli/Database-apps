@@ -1,3 +1,5 @@
+// Author: Chisheng Li
+// PHP code to add contacts to the database.
 <?php
 require_once "db.php";
 session_start();
