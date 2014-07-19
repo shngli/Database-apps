@@ -1,4 +1,4 @@
-(: Author: Chisheng Li)
+(: Author: Chisheng Li :)
 (: Write each of the following queries using XQuery. :)
 
 (: Return all Title elements (of both departments and courses). :)
