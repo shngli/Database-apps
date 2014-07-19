@@ -3,8 +3,7 @@
 (: Return the area of Mongolia. :)
 doc("countries.xml")//country[@name = "Mongolia"]/data(@area)
 
-(: Return the names of all cities that have the same name as the country in which they are located.
- :)
+(: Return the names of all cities that have the same name as the country in which they are located. :)
 doc("countries.xml")//country[@name = city/name]/data(@name)
  
 (: Return the average population of Russian-speaking countries. :)
@@ -29,12 +28,6 @@ return <country>{ $b/data(@name) }</country> }
 </result>
 
 (: Return the countries with the highest and lowest population densities.:) 
-(: The result should take the form: :)
-(: <result> :)
-(:  <highest density="value">country-name</highest> :)
-(:  <lowest density="value">country-name</lowest> :)
-(: </result> :)
-
 <result>
 <highest density="{max(doc("countries.xml")//country/(@population div @area))}">
 { for $b in doc("countries.xml")//country
@@ -49,3 +42,9 @@ return data($b/@name)
 }
 </lowest>
 </result>
+
+(: Return the names of all countries with population greater than 100 million. :)
+doc("countries.xml")//country[data(@population) > 100000000]/data(@name)
+  
+(: Return the names of all countries where over 50% of the population speaks German. :)
+doc("countries.xml")//country/language[contains(.,"German") and data(@percentage)>50]/../data(@name)
