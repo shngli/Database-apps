@@ -9,10 +9,10 @@ A PHP/MySQL project in collaboration with Cynthia Wilkinson of the New Morning S
 ###MySQL-and-PHP:
 Basic php and mysql codes to build a CRUD application.
 
-###Querying XML
+###Querying XML:
 Basic XQuery codes to query XML documents.
 
-###SQL
+###SQL:
 Lecture notes, SQL codes and quizzes on the basics of database applications.
 
 ###References:
