@@ -29,7 +29,7 @@ PHP and MySQL codes to build a CRUD application.
 Basic XQuery codes to query XML documents.
 
 ###SQL:
-Lecture notes, SQL codes and quizzes on the basics of database applications.
+Lecture notes, SQL codes and quizzes on the basics of database applications. See Jennifer Widom's [Stanford CS145 Introduction to Databases](http://web.stanford.edu/class/cs145/) for updated course materials. 
 
 ###References:
 1. **Learning PHP, MySQL, JavaScript, and CSS: A Step-by-Step Guide to Creating Dynamic Websites (Second Edition)** by Robin Nixon. 
