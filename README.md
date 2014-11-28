@@ -1,9 +1,7 @@
 Database applications
 ============
 
-Repository for database applications
-
-###Change Couinting Game:
+###Change Counting Game:
 A PHP/MySQL project in collaboration with Cynthia Wilkinson of the New Morning School in Plymouth, MI, to design an interactive change counting game for her 4th grade students. The students will log in and choose an easy, medium or hard scenario. In each scenario, the students have $20 and must purchase one object from 4 categories of magical objects (exlixirs, eggs, sands and portions). Once the students have selected the item they want to purchase, the cave hermit will ask them for the exact change they are owed after the purchase. Students must input the correct amount, or be asked to try again if they enter the wrong amount. HTML, CSS and Javascript was used for the front-end development, whereas PHP and MySQL was used for the backend support. 
 
 After logging in, the student picks an easy, medium, or hard scenario. In each scenario, the student has $20 dollars and must purchase one object from four categories of magical objects: elixirs, eggs, sands, and potions: 
