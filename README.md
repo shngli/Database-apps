@@ -10,7 +10,7 @@ After logging in, the student picks an easy, medium, or hard scenario. In each s
 ![store-front.png](https://github.com/shngli/Database-apps/blob/master/Change%20Counting%20Game/store-front.png)
 
 The student selects the item they want to buy, which brings up the cave hermit who needs to give back change for their purchase. His math skills are fuzzy, and he needs help determining the right amount:
-![purchase.png](https://github.com/shngli/Database-apps/blob/master/Change%20Counting%20Game/store-front.png)
+![purchase.png](https://github.com/shngli/Database-apps/blob/master/Change%20Counting%20Game/purchase.png)
 
 The student must input the correct change they are owed after purchasing the item. If the wrong amount is entered, they are asked to try again, and if it becomes too challenging, they can simply put the item back. These items are from the “easy” setting, which uses whole dollar amounts. In medium and hard difficulties, the prices go to tens of cents and then to exact penny amounts.
 
