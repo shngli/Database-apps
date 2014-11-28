@@ -14,11 +14,11 @@ The student selects the item they want to buy, which brings up the cave hermit w
 
 The student must input the correct change they are owed after purchasing the item. If the wrong amount is entered, they are asked to try again, and if it becomes too challenging, they can simply put the item back. These items are from the “easy” setting, which uses whole dollar amounts. In medium and hard difficulties, the prices go to tens of cents and then to exact penny amounts.
 
-The main chunks that needed to be coded to build the game were:
+The main coding tasks that were needed to build the game:
 
-1. The cave interface, featuring a background, shelves, items, and a hermit.
-2. A database to hold user information and another for game objects.
-3. A form for the user to input change.
+1) The cave interface, featuring a background, shelves, items, and a hermit.
+2) A database to hold user information and another for game objects.
+3) A form for the user to input change.
 
 Everyone was involved in coding the PHP portions of the game, while also handling more specific roles: I was in charge of the backend database of the game (changegame.sql) using MySQL, which involved storing user login information and game values for the game's calculations to be functional.
 
