@@ -25,7 +25,7 @@ Everyone was involved in coding the PHP portions of the game, while also handlin
 Contributors: Chisheng Li, Greg Cunningham, Michelle Brennan
 
 ###MySQL-and-PHP:
-Php and Mysql codes to build a CRUD application.
+PHP and MySQL codes to build a CRUD application.
 
 ###Querying XML:
 Basic XQuery codes to query XML documents.
